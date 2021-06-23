@@ -1,15 +1,5 @@
 <script>
 	import '../app.postcss';
-	import Typed from 'typed.js';
-	import { onMount } from 'svelte';
-	onMount(() => {
-		new Typed('#typed', {
-			typeSpeed: 25,
-			showCursor: false,
-			loop: true,
-			strings: ['indiehackers^1500', 'developers^1500', 'hobbyists^1500']
-		});
-	});
 </script>
 
 <header class="p-4 flex justify-center items-center">
