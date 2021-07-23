@@ -1,7 +1,21 @@
+<script context="module">
+	export const hydrate = true;
+</script>
+
+<script>
+	let email;
+	let emailInput;
+	async function subscribe(e) {
+		if (email && emailInput.checkValidity()) {
+			e.preventDefault();
+			window.location.assign(`https://newsletter.coollabs.io/${email}/subscribe`);
+		}
+	}
+</script>
 <div class="">
-	<div class="max-w-7xl mx-auto px-2 py-16 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="text-center flex flex-col justify-center items-center">
-			<p class="mt-1 text-4xl font-extrabold text-white text-5xl  lg:text-6xl text-center gradient">
+			<p class="mt-1 font-extrabold text-white text-5xl  lg:text-6xl text-center gradient">
 				Coolify
 			</p>
 			<h2 class="text-2xl md:text-3xl font-extrabold text-white pt-8">
@@ -281,5 +295,39 @@
 				></span
 			>
 		</h2>
+		<div
+		class="max-w-3xl text-center pb-10 bg-black border-4 border-dashed hover:border-indigo-600 border-transparent rounded py-5 my-5 mx-auto"
+	>
+		<p class="font-bold text-xl">
+			Interested about coolify or <a
+				href="https://coollabs.io/products"
+				target="_blank"
+				class="gradient font-extrabold">our other projects?</a
+			>
+		</p>
+		<p class="font-bold text-xl py-2">
+			<span class="font-extrabold gradient">Subscribe</span> to our newsletter! 👇
+		</p>
+		<p class="pb-6 text-xs">(No bullsh*t, promise)</p>
+		<div>
+			<div class="py-5">
+				<form>
+					<input
+						bind:this={emailInput}
+						class="w-64"
+						placeholder="Email address"
+						type="email"
+						bind:value={email}
+						required
+					/>
+					<button
+						type="submit"
+						class="w-32 button py-2 bg-indigo-600 hover:bg-indigo-500 cursor-pointer text-center"
+						on:click={subscribe}>Subscribe</button
+					>
+				</form>
+			</div>
+		</div>
+	</div>
 	</div>
 </div>
