@@ -6,7 +6,6 @@
 	<nav class="text-xl flex justify-center space-x-4 font-bold">
 		<a class="navbar-link" href=".">Home</a>
 		<a class="navbar-link" href="demo"> Demo </a>
-		<!-- <a class="navbar-link" href="donate">Donate </a> -->
 		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
 	</nav>
 </header>
