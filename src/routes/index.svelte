@@ -301,7 +301,7 @@
 		class=" max-w-3xl text-center pb-10 py-5 my-5 mx-auto"
 	>
 		<p class="font-bold text-xl">
-			Interested about coolTalk or <a
+			Interested about coolify or <a
 				href="https://coollabs.io/products"
 				target="_blank"
 				class="underline text-sky-500 hover:text-white font-extrabold">our other projects?</a
