@@ -12,6 +12,7 @@
 		<a class="navbar-link" href=".">Home</a>
 		<a class="navbar-link" href="demo"> Demo </a>
 		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
+		<a class="navbar-link" href="https://docs.coollabs.io/contact">Contact</a>
 	</nav>
 </header>
 <slot />
