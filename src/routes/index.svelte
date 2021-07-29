@@ -3,15 +3,10 @@
 </script>
 
 <script>
-	let email;
-	let emailInput;
-	async function subscribe(e) {
-		if (email && emailInput.checkValidity()) {
-			e.preventDefault();
-			window.location.assign(`https://newsletter.coollabs.io/${email}/subscribe`);
-		}
-	}
+	import Subscribe from '$components/Subscribe.svelte';
+
 </script>
+
 <div class="">
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="text-center flex flex-col justify-center items-center">
@@ -238,7 +233,7 @@
 		</div>
 	</div>
 </div>
-<div class="text-center">
+<div class="text-center pb-4">
 	<h2 class="text-xl font-extrabold tracking-tight text-white sm:text-2xl">
 		<span class="block"
 			><span class="text-blue-500">Follow</span> for updates
@@ -276,60 +271,4 @@
 		>
 	</h2>
 </div>
-<div class="bg-coolblack">
-	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
-		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
-			Try out now! It only takes 2-3 minutes!
-		</div>
-		<div class="text-base text-white pb-10">
-			(<span class="text-yellow-400 font-bold">Ubuntu 20.04</span> tested at the moment)
-		</div>
-		<div class="flex justify-center">
-			<div class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-sm">
-				/bin/bash -c "$(curl -fsSL https://get.coollabs.io/coolify/install.sh)"
-			</div>
-		</div>
-		<div class="pb-16">
-			<a
-				href="https://github.com/coollabsio/get.coollabs.io"
-				target="_blank"
-				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code)</a
-			>
-		</div>
-
-		<div
-		class=" max-w-3xl text-center pb-10 py-5 my-5 mx-auto"
-	>
-		<p class="font-bold text-xl">
-			Interested about coolify or <a
-				href="https://coollabs.io/products"
-				target="_blank"
-				class="underline text-sky-500 hover:text-white font-extrabold">our other projects?</a
-			>
-		</p>
-		<p class="font-bold text-xl py-2">
-			<span class="font-extrabold gradient">Subscribe</span> to our newsletter! 👇
-		</p>
-		<p class="pb-6 text-xs">(No bullsh*t, promise)</p>
-		<div>
-			<div class="py-5">
-				<form>
-					<input
-						bind:this={emailInput}
-						class="w-64"
-						placeholder="Email address"
-						type="email"
-						bind:value={email}
-						required
-					/>
-					<button
-						type="submit"
-						class="w-32 button py-2 bg-indigo-600 hover:bg-indigo-500 cursor-pointer text-center"
-						on:click={subscribe}>Subscribe</button
-					>
-				</form>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
+<Subscribe />
