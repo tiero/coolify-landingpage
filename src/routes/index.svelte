@@ -233,6 +233,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="text-center pb-4">
 	<h2 class="text-xl font-extrabold tracking-tight text-white sm:text-2xl">
 		<span class="block"
@@ -270,5 +271,27 @@
 			></span
 		>
 	</h2>
+</div>
+<div class="bg-coolblack">
+	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
+		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
+			Try out now! It only takes 2-3 minutes!
+		</div>
+		<div class="text-base text-white pb-10">
+			(<span class="text-yellow-400 font-bold">Ubuntu 20.04</span> tested at the moment)
+		</div>
+		<div class="flex justify-center">
+			<div class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-sm">
+				/bin/bash -c "$(curl -fsSL https://get.coollabs.io/coolify/install.sh)"
+			</div>
+		</div>
+		<div class="pb-16">
+			<a
+				href="https://github.com/coollabsio/get.coollabs.io"
+				target="_blank"
+				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code)</a
+			>
+		</div>
+	</div>
 </div>
 <Subscribe />
