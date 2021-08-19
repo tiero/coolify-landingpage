@@ -26,6 +26,11 @@
 		Built for <span id="typed" class="text-red-400" /> like you!
 	</p>
 </div>
+<div class="text-center pb-10">
+	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white ">
+		(Currently working on an enterprise-ready <a class="underline  hover:text-purple-500" href="https://github.com/coollabsio/coolify/issues/83" target="_blank">version</a> 🎉)
+	</p>
+</div>
 <div class="pb-16">
 	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="mt-10">
