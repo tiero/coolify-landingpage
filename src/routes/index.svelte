@@ -4,7 +4,6 @@
 
 <script>
 	import Subscribe from '$components/Subscribe.svelte';
-
 </script>
 
 <div class="">
@@ -14,9 +13,9 @@
 				Coolify
 			</p>
 			<h2 class="text-2xl md:text-3xl font-extrabold text-white pt-8">
-				An open-source, hassle-free, self-hostable<br />
+				An open-source & self-hostable
 				<span class="text-indigo-400">Heroku</span>
-				& <span class="text-green-400">Netlify</span> alternative
+				<span class="text-pink-400 text-2xl">/</span> <span class="text-green-400">Netlify</span> alternative
 			</h2>
 		</div>
 	</div>
@@ -27,14 +26,14 @@
 	</p>
 </div>
 <div class="text-center pb-10">
-	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white ">
-		(Currently working on an enterprise-ready <a class="underline  hover:text-purple-500" href="https://github.com/coollabsio/coolify/issues/83" target="_blank">version</a> 🎉)
+	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white  px-10">
+		Version 2 is finally here with lots of new features! 🎉
 	</p>
 </div>
-<div class="pb-16">
+<div class="pb-16 md:px-0 px-6">
 	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="mt-10">
-			<div class="space-y-10 lg:space-y-0 mx-auto lg:grid lg:grid-cols-3 lg:gap-8 w-custom">
+			<div class="space-y-10 lg:space-y-0 mx-auto lg:grid lg:grid-cols-3 lg:gap-8 w-custom pb-10">
 				<div>
 					<div
 						class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white"
@@ -42,16 +41,19 @@
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-6 w-6"
-							fill="none"
 							viewBox="0 0 24 24"
-							stroke="currentColor"
+							stroke-width="2"
+							stroke="currentcolor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
 						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-							/>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<rect x="4" y="4" width="6" height="6" rx="1" />
+							<rect x="4" y="14" width="6" height="6" rx="1" />
+							<rect x="14" y="14" width="6" height="6" rx="1" />
+							<line x1="14" y1="7" x2="20" y2="7" />
+							<line x1="17" y1="4" x2="17" y2="10" />
 						</svg>
 					</div>
 					<div class="mt-5">
@@ -69,77 +71,71 @@
 				</div>
 				<div>
 					<div
-						class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white"
-					>
-						<svg
-							class="h-6 w-6"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-							/>
-						</svg>
-					</div>
-					<div class="mt-5">
-						<div class="text-lg leading-6 font-extrabold text-white">Databases</div>
-						<div class="mt-2 text-base text-gray-300">
-							One-click <span class="font-bold text-yellow-400"
-								>MongoDB, MySQL, PostgreSQL, CouchDB, RedisDB</span
-							>
-							instances ready to use - with
-							<span class="font-bold text-yellow-400">one-click backups</span>! <br /><br />Yes,
-							everything is one button! <span class="font-bold text-yellow-400">Really!</span>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div
 						class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-6 w-6"
-							fill="none"
 							viewBox="0 0 24 24"
+							stroke-width="2"
 							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
 						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-							/>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<ellipse cx="12" cy="6" rx="8" ry="3" />
+							<path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+							<path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+						</svg>
+					</div>
+					<div class="mt-5">
+						<div class="text-lg leading-6 font-extrabold text-white">Databases</div>
+						<div class="mt-2 text-base text-gray-300">
+							One-click <span class="font-bold text-purple-400"
+								>MongoDB, MySQL, PostgreSQL, CouchDB, RedisDB</span
+							>
+							instances ready to use.<br /><br />
+							You can also access them over the internet if needed!
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
 						</svg>
 					</div>
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">Services</div>
 						<div class="mt-2 text-base text-gray-300">
 							Need your own instance of <a href="https://wordpress.org" target="_blank"
-								><span class="font-bold text-purple-500 underline hover:text-white">WordPress</span
-								>,
+								><span class="font-bold text-pink-500 underline hover:text-white">WordPress</span>,
 								<a href="https://plausible.io" target="_blank"
-									><span class="font-bold text-purple-500 underline hover:text-white"
+									><span class="font-bold text-pink-500 underline hover:text-white"
 										>Plausible Analytics</span
 									></a
 								>,
 								<a href="https://nocodb.com" target="_blank"
-									><span class="font-bold text-purple-500 underline hover:text-white">NocoDB</span
-									></a
+									><span class="font-bold text-pink-500 underline hover:text-white">NocoDB</span></a
 								>,
 								<a href="https://min.io/" target="_blank"
-									><span class="font-bold text-purple-500 underline hover:text-white">MinIO</span
-									></a
+									><span class="font-bold text-pink-500 underline hover:text-white">MinIO</span></a
 								>
 								or
 								<a href="https://github.com/cdr/code-server" target="_blank"
-									><span class="font-bold text-purple-500 underline hover:text-white"
+									><span class="font-bold text-pink-500 underline hover:text-white"
 										>VSCode Server</span
 									></a
 								> ? You covered here!
@@ -148,9 +144,75 @@
 					</div>
 				</div>
 			</div>
-			<div
-				class="space-y-10 pt-6 lg:pt-10 lg:space-y-0 mx-auto lg:grid justify-center lg:grid-cols-3 lg:gap-8 w-custom"
-			>
+			<div class="space-y-10 lg:space-y-0 mx-auto lg:grid lg:grid-cols-3 lg:gap-8 w-custom">
+				<div>
+					<div
+						class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<circle cx="6" cy="6" r="2" />
+							<circle cx="18" cy="18" r="2" />
+							<path d="M11 6h5a2 2 0 0 1 2 2v8" />
+							<polyline points="14 9 11 6 14 3" />
+							<path d="M13 18h-5a2 2 0 0 1 -2 -2v-8" />
+							<polyline points="10 15 13 18 10 21" />
+						</svg>
+					</div>
+					<div class="mt-5">
+						<div class="text-lg leading-6 font-extrabold text-white">Git sources</div>
+						<div class="mt-2 text-base text-gray-300">
+							You could use <span class="text-orange-500 font-bold">GitHub, GitLab, Bitbucket</span>
+							<span class="text-xs text-red-500 font-mono">(WIP)</span> Git  to host your code, both <span class="text-orange-500 font-bold">hosted</span>
+							or <span class="text-orange-500 font-bold">self-hosted version</span>; we are integrated with all of them!
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M22 12.54c-1.804 -.345 -2.701 -1.08 -3.523 -2.94c-.487 .696 -1.102 1.568 -.92 2.4c.028 .238 -.32 1.002 -.557 1h-14c0 5.208 3.164 7 6.196 7c4.124 .022 7.828 -1.376 9.854 -5c1.146 -.101 2.296 -1.505 2.95 -2.46z"
+							/>
+							<path d="M5 10h3v3h-3z" />
+							<path d="M8 10h3v3h-3z" />
+							<path d="M11 10h3v3h-3z" />
+							<path d="M8 7h3v3h-3z" />
+							<path d="M11 7h3v3h-3z" />
+							<path d="M11 4h3v3h-3z" />
+							<path d="M4.571 18c1.5 0 2.047 -.074 2.958 -.78" />
+							<line x1="10" y1="16" x2="10" y2="16.01" />
+						</svg>
+					</div>
+					<div class="mt-5">
+						<div class="text-lg leading-6 font-extrabold text-white">Destinations</div>
+						<div class="mt-2 text-base text-gray-300">
+							No matter what you host, you can deploy it anywhere, <span class="text-sky-500 font-bold"
+								>local Docker Engine, remote Docker Engine</span
+							> <span class="text-xs text-red-500 font-mono">(WIP)</span>, or <span class="text-sky-500 font-bold">Kubernetes</span>
+							<span class="text-xs text-red-500 font-mono">(WIP)</span>.
+						</div>
+					</div>
+				</div>
 				<div>
 					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
 						<svg
@@ -180,8 +242,40 @@
 						</div>
 					</div>
 				</div>
+
+			</div>
+			<div
+				class="space-y-10 pt-6 lg:pt-10 lg:space-y-0 mx-auto lg:grid justify-center lg:grid-cols-3 lg:gap-8 w-custom"
+			>
+			<div>
+				<div class="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<circle cx="9" cy="7" r="4" />
+						<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+						<path d="M16 3.13a4 4 0 0 1 0 7.75" />
+						<path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+					</svg>
+				</div>
+				<div class="mt-5">
+					<div class="text-lg leading-6 font-extrabold text-white">Teams</div>
+					<div class="mt-2 text-base text-gray-300">
+						You can manage teams easily with our new <span class="text-cyan-500 font-bold">team management system</span>. Each team is separated by
+						a <span class="text-cyan-500 font-bold">namespace</span>, and you can create as many teams as you want.
+					</div>
+				</div>
+			</div>
 				<div>
-					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-pink-500 text-white">
+					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-white">
 						<svg
 							class="h-6 w-6"
 							xmlns="http://www.w3.org/2000/svg"
@@ -211,27 +305,32 @@
 				</div>
 
 				<div>
-					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
+					<div
+						class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white"
+					>
 						<svg
-							class="h-6 w-6"
 							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
+							class="h-6 w-6"
 							viewBox="0 0 24 24"
+							stroke-width="2"
 							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
 						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+								d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
 							/>
+							<circle cx="12" cy="12" r="3" />
 						</svg>
 					</div>
 					<div class="mt-5">
-						<div class="text-lg leading-6 font-extrabold text-white">
-							Cronjobs, monitoring, etc...
+						<div class="text-lg leading-6 font-extrabold text-white">New architecture</div>
+						<div class="mt-2 text-base text-gray-300">
+							<span class="text-yellow-500 font-bold">Fully rewritten</span> from scratch and eliminated all the restrictions that the first
+							version had!
 						</div>
-						<div class="mt-2 text-xs text-red-500">coming soon</div>
 					</div>
 				</div>
 			</div>
@@ -280,11 +379,9 @@
 <div class="bg-coolblack">
 	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
 		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
-			Try out now! It only takes 2-3 minutes!
+			Try out now! It only takes a minute!
 		</div>
-		<div class="text-base text-white pb-10">
-			(<span class="text-yellow-400 font-bold">Ubuntu 20.04</span> tested at the moment)
-		</div>
+	
 		<div class="flex justify-center">
 			<div class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-sm">
 				/bin/bash -c "$(curl -fsSL https://get.coollabs.io/coolify/install.sh)"
@@ -292,7 +389,7 @@
 		</div>
 		<div class="pb-16">
 			<a
-				href="https://github.com/coollabsio/get.coollabs.io"
+				href="https://github.com/coollabsio/get.coollabs.io/blob/main/static/coolify/install.sh"
 				target="_blank"
 				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code)</a
 			>
