@@ -20,14 +20,15 @@
 		</div>
 	</div>
 </div>
+
 <div class="text-center pb-10">
-	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-		Built for <span id="typed" class="text-red-400" /> like you!
+	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl">
+		Built for <span id="typed" class="text-red-400" /> 
 	</p>
 </div>
 <div class="text-center pb-10">
-	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white  px-10">
-		Version 2 is finally here with lots of new features! 🎉
+	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
+		<span class="text-pink-500 text-3xl">V2</span> is finally here with lots of new features! 🎉
 	</p>
 </div>
 <div class="pb-16 md:px-0 px-6">
