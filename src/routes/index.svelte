@@ -3,14 +3,23 @@
 </script>
 
 <script>
+	let url = 'https://get.coollabs.io';
 	import Subscribe from '$components/Subscribe.svelte';
+	import { onMount } from 'svelte';
+	let instances = 0
+	onMount(async () => {
+		const {count} = await (
+			await fetch(`${url}/instances`, { headers: { 'cool-api-key': 'coolify' } })
+		).json();
+		instances = count
+	});
 </script>
 
 <div class="">
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="text-center flex flex-col justify-center items-center">
 			<p class="mt-1 font-extrabold text-white text-5xl  lg:text-6xl text-center gradient">
-				Coolify
+				Coolify<span class="text-pink-400 text-xl">v2</span>
 			</p>
 			<h2 class="text-2xl md:text-3xl font-extrabold text-white pt-8">
 				An open-source & self-hostable
@@ -23,12 +32,12 @@
 
 <div class="text-center pb-10">
 	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl">
-		Built for <span id="typed" class="text-red-400" /> 
+		Built for <span id="typed" class="text-red-400" />
 	</p>
 </div>
 <div class="text-center pb-10">
 	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
-		<span class="text-pink-500 text-3xl">V2</span> is finally here with lots of new features! 🎉
+		<span class="text-sky-500 text-4xl">{instances}</span> instances already running and counting!
 	</p>
 </div>
 <div class="pb-16 md:px-0 px-6">
@@ -173,8 +182,10 @@
 						<div class="text-lg leading-6 font-extrabold text-white">Git sources</div>
 						<div class="mt-2 text-base text-gray-300">
 							You could use <span class="text-orange-500 font-bold">GitHub, GitLab, Bitbucket</span>
-							<span class="text-xs text-red-500 font-mono">(WIP)</span> Git  to host your code, both <span class="text-orange-500 font-bold">hosted</span>
-							or <span class="text-orange-500 font-bold">self-hosted version</span>; we are integrated with all of them!
+							<span class="text-xs text-red-500 font-mono">(WIP)</span> Git to host your code, both
+							<span class="text-orange-500 font-bold">hosted</span>
+							or <span class="text-orange-500 font-bold">self-hosted version</span>; we are
+							integrated with all of them!
 						</div>
 					</div>
 				</div>
@@ -207,9 +218,10 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">Destinations</div>
 						<div class="mt-2 text-base text-gray-300">
-							No matter what you host, you can deploy it anywhere, <span class="text-sky-500 font-bold"
-								>local Docker Engine, remote Docker Engine</span
-							> <span class="text-xs text-red-500 font-mono">(WIP)</span>, or <span class="text-sky-500 font-bold">Kubernetes</span>
+							No matter what you host, you can deploy it anywhere, <span
+								class="text-sky-500 font-bold">local Docker Engine, remote Docker Engine</span
+							> <span class="text-xs text-red-500 font-mono">(WIP)</span>, or
+							<span class="text-sky-500 font-bold">Kubernetes</span>
 							<span class="text-xs text-red-500 font-mono">(WIP)</span>.
 						</div>
 					</div>
@@ -243,38 +255,39 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<div
 				class="space-y-10 pt-6 lg:pt-10 lg:space-y-0 mx-auto lg:grid justify-center lg:grid-cols-3 lg:gap-8 w-custom"
 			>
-			<div>
-				<div class="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-6 w-6"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<circle cx="9" cy="7" r="4" />
-						<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-						<path d="M16 3.13a4 4 0 0 1 0 7.75" />
-						<path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-					</svg>
-				</div>
-				<div class="mt-5">
-					<div class="text-lg leading-6 font-extrabold text-white">Teams</div>
-					<div class="mt-2 text-base text-gray-300">
-						You can manage teams easily with our new <span class="text-cyan-500 font-bold">team management system</span>. Each team is separated by
-						a <span class="text-cyan-500 font-bold">namespace</span>, and you can create as many teams as you want.
+				<div>
+					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<circle cx="9" cy="7" r="4" />
+							<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+							<path d="M16 3.13a4 4 0 0 1 0 7.75" />
+							<path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+						</svg>
+					</div>
+					<div class="mt-5">
+						<div class="text-lg leading-6 font-extrabold text-white">Teams</div>
+						<div class="mt-2 text-base text-gray-300">
+							You can manage teams easily with our new <span class="text-cyan-500 font-bold"
+								>team management system</span
+							>. Each team is separated by a <span class="text-cyan-500 font-bold">namespace</span>,
+							and you can create as many teams as you want.
+						</div>
 					</div>
 				</div>
-			</div>
 				<div>
 					<div class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-white">
 						<svg
@@ -329,8 +342,8 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">New architecture</div>
 						<div class="mt-2 text-base text-gray-300">
-							<span class="text-yellow-500 font-bold">Fully rewritten</span> from scratch and eliminated all the restrictions that the first
-							version had!
+							<span class="text-yellow-500 font-bold">Fully rewritten</span> from scratch and eliminated
+							all the restrictions that the first version had!
 						</div>
 					</div>
 				</div>
@@ -382,7 +395,7 @@
 		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
 			Try out now! It only takes a minute!
 		</div>
-	
+
 		<div class="flex justify-center">
 			<div class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-sm">
 				/bin/bash -c "$(curl -fsSL https://get.coollabs.io/coolify/install.sh)"
