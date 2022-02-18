@@ -37,7 +37,7 @@
 </div>
 <div class="text-center pb-10">
 	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
-		<span class="text-sky-500 text-4xl">{instances}</span> instances already running and counting!
+		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
 	</p>
 </div>
 <div class="pb-16 md:px-0 px-6">
