@@ -6,12 +6,12 @@
 	let url = 'https://get.coollabs.io';
 	import Subscribe from '$components/Subscribe.svelte';
 	import { onMount } from 'svelte';
-	let instances = 0
+	let instances = 0;
 	onMount(async () => {
-		const {count} = await (
+		const { count } = await (
 			await fetch(`${url}/instances`, { headers: { 'cool-api-key': 'coolify' } })
 		).json();
-		instances = count
+		instances = count;
 	});
 </script>
 
@@ -39,6 +39,13 @@
 	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
 		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
 	</p>
+
+	<p class="mt-10 text-xl leading-8 font-extrabold tracking-tight text-white px-10 ">
+		<a href="https://demo.coolify.io" target="_blank">
+			<span class="text-orange-500 text-2xl uppercase hover:underline">Demo instance</span>
+		</a>
+	</p>
+	<span class="tracking-tight text-gray-300 text-xs font-mono">(Please do not overload it 😁)</span>
 </div>
 <div class="pb-16 md:px-0 px-6">
 	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8">
