@@ -17,6 +17,7 @@
 				const { message } = await (
 					await fetch(`${url}/subscribe`, {
 						method: 'POST',
+						mode: 'cors',
 						headers: {
 							'Content-Type': 'application/json'
 						},
