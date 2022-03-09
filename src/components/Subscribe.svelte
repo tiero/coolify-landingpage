@@ -14,7 +14,17 @@
 		if (emailSubscribe && emailSubscribeInput.checkValidity()) {
 			e.preventDefault();
 			try {
-				const { message } = await (await fetch(`${url}/subscribe/${emailSubscribe}`)).json();
+				const { message } = await (
+					await fetch(`${url}/subscribe`, {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({
+							email: emailSubscribeInput.value
+						})
+					})
+				).json();
 				toast.push(message);
 			} catch (error) {
 				toast.push(error);
@@ -32,8 +42,8 @@
 				class="underline text-sky-500 hover:text-white font-extrabold">our other projects?</a
 			>
 		</p>
-		<p class="font-bold  py-2">
-			<span class="font-extrabold gradient">Subscribe</span> to our newsletter! 👇
+		<p class="text-xs md:text-base py-2">
+			<span class=" gradient">Subscribe</span> to our newsletter!
 		</p>
 		<p class="pb-6 text-xs">(No bullsh*t, promise)</p>
 		<div class="">
@@ -49,7 +59,7 @@
 					/>
 					<button
 						type="submit"
-						class="w-32 button py-2 bg-coollabs hover:bg-indigo-500 cursor-pointer text-center"
+						class="w-32 button py-2 bg-coollabs hover:bg-coollabs-100 cursor-pointer text-center"
 						on:click={subscribe}>Subscribe</button
 					>
 				</form>
