@@ -26,7 +26,6 @@
 	<link rel="stylesheet" href="https://cdn.coollabs.io/css/tailwind-2.0.3.min.css" />
 	<link rel="stylesheet" href="https://cdn.coollabs.io/fonts/montserrat/montserrat.css" />
 	<script src="https://cdn.coollabs.io/js/typed.js-2.0.11.js"></script>
-	<script src="https://cdn.coollabs.io/js/canvas-confetti-1.5.1.min.js"></script>
 	%svelte.head%
 </head>
 
@@ -39,13 +38,6 @@
 			showCursor: false,
 			loop: true,
 			strings: ['teams!^1500', 'indiehackers!^1500', 'companies!^1500', 'open sourcerers!^1500', 'developers!^1500', 'hobbyists!^1500']
-		});
-
-		confetti({
-			particleCount: 200,
-			startVelocity: 45,
-			spread: 360,
-
 		});
 
 	</script>

@@ -76,13 +76,12 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">Applications</div>
 						<div class="mt-2 text-base text-gray-300">
-							Build & deploy <span class="font-bold text-green-400">Static Sites</span>,
-							<span class="font-bold text-green-400"> any Node.js based applications</span>,
-							<span class="font-bold text-green-400">PHP</span>,
-							<span class="font-bold text-green-400">Rust</span>
+							Deploy <span class="font-bold text-green-400"
+								>Static, NodeJS, Svelte, React, Vue, Next, Nuxt, Astro, PHP, Rust, and more...</span
+							>
 							applications hassle-free with
-							<span class="font-bold text-green-400">automatic reverse proxy</span>
-							and <span class="font-bold text-green-400">SSL certs</span>!
+							<span class="font-bold text-green-400">automatic reverse proxy</span> and
+							<span class="font-bold text-green-400"> free SSL certificates</span>!
 						</div>
 					</div>
 				</div>
@@ -112,8 +111,8 @@
 							One-click <span class="font-bold text-purple-400"
 								>MongoDB, MySQL, PostgreSQL, CouchDB, RedisDB</span
 							>
-							instances ready to use.<br /><br />
-							You can also access them over the internet if needed!
+							instances ready to use, <span class="font-bold text-purple-400"> locally </span>or
+							<span class="font-bold text-purple-400">over the internet</span>!
 						</div>
 					</div>
 				</div>
@@ -139,24 +138,33 @@
 						<div class="mt-2 text-base text-gray-300">
 							Need your own instance of <a href="https://wordpress.org" target="_blank"
 								><span class="font-bold text-pink-500 underline hover:text-white">WordPress</span>,
-								<a href="https://plausible.io" target="_blank"
-									><span class="font-bold text-pink-500 underline hover:text-white"
-										>Plausible Analytics</span
-									></a
-								>,
-								<a href="https://nocodb.com" target="_blank"
-									><span class="font-bold text-pink-500 underline hover:text-white">NocoDB</span></a
-								>,
-								<a href="https://min.io/" target="_blank"
-									><span class="font-bold text-pink-500 underline hover:text-white">MinIO</span></a
-								>
-								or
-								<a href="https://github.com/cdr/code-server" target="_blank"
-									><span class="font-bold text-pink-500 underline hover:text-white"
-										>VSCode Server</span
-									></a
-								> ? You covered here!
 							</a>
+							<span class="font-bold text-pink-500 underline hover:text-white">Ghost</span>
+							<a href="https://plausible.io" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white"
+									>Plausible Analytics</span
+								></a
+							>,
+							<a href="https://nocodb.com" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white">NocoDB</span></a
+							>,
+							<a href="https://github.com/dani-garcia/vaultwarden" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white"
+									>BitWarden/VaultWarden</span
+								></a
+							>,
+							<a href="https://languagetool.org/" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white">LanguageTool</span
+								></a
+							>,
+							<a href="https://n8n.io/" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white">N8n</span></a
+							>,
+							<a href="https://github.com/cdr/code-server" target="_blank"
+								><span class="font-bold text-pink-500 underline hover:text-white"
+									>VSCode Server</span
+								></a
+							>, <span class="font-bold text-pink-500">and more...</span>? No problem! Just a click!
 						</div>
 					</div>
 				</div>
@@ -188,11 +196,16 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">Git sources</div>
 						<div class="mt-2 text-base text-gray-300">
-							You could use <span class="text-orange-500 font-bold">GitHub, GitLab, Bitbucket</span>
-							<span class="text-xs text-red-500 font-mono">(WIP)</span> Git to host your code, both
+							Need integration with <span class="text-orange-500 font-bold"
+								>GitHub, GitLab, Bitbucket</span
+							>
+							<span class="text-xs text-red-500 font-mono">(WIP)</span>
+							<span class="text-orange-500 font-bold">, Gitea</span>
+							<span class="text-xs text-red-500 font-mono">(WIP)</span>
+							both
 							<span class="text-orange-500 font-bold">hosted</span>
-							or <span class="text-orange-500 font-bold">self-hosted version</span>; we are
-							integrated with all of them!
+							or <span class="text-orange-500 font-bold">self-hosted version</span>? You are in the
+							right place!
 						</div>
 					</div>
 				</div>
@@ -226,7 +239,7 @@
 						<div class="text-lg leading-6 font-extrabold text-white">Destinations</div>
 						<div class="mt-2 text-base text-gray-300">
 							No matter what you host, you can deploy it anywhere, <span
-								class="text-sky-500 font-bold">local Docker Engine, remote Docker Engine</span
+								class="text-sky-500 font-bold">Local Docker Engine, Remote Docker Engine</span
 							> <span class="text-xs text-red-500 font-mono">(WIP)</span>, or
 							<span class="text-sky-500 font-bold">Kubernetes</span>
 							<span class="text-xs text-red-500 font-mono">(WIP)</span>.
@@ -255,7 +268,7 @@
 							Commit / Pull Request deployments
 						</div>
 						<div class="mt-2 text-base text-gray-300">
-							Automagically deploy new commits and pull requests to <span
+							Automagically deploy new commits and pull requests separately to <span
 								class="font-bold text-red-500">quickly review contributions</span
 							>
 							and <span class="font-bold text-red-500">speed up your teamwork</span>!
@@ -319,7 +332,7 @@
 						<div class="mt-2 text-base text-gray-300">
 							<span class="font-bold text-pink-500">Install</span> and
 							<span class="font-bold text-pink-500">upgrade </span>
-							your all-in-one infrastructure service
+							your all-in-one IaaS platform
 							<span class="font-bold text-pink-500">with one button</span>!
 						</div>
 					</div>
@@ -349,8 +362,8 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">New architecture</div>
 						<div class="mt-2 text-base text-gray-300">
-							<span class="text-yellow-500 font-bold">Fully rewritten</span> from scratch and eliminated
-							all the restrictions that the first version had!
+							<span class="text-yellow-500 font-bold">v2 is fully rewritten</span> from scratch and eliminated
+							all the restrictions that v1 had!
 						</div>
 					</div>
 				</div>
@@ -417,4 +430,4 @@
 		</div>
 	</div>
 </div>
-<Subscribe />	
+<Subscribe />
