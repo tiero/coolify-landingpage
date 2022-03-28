@@ -22,19 +22,24 @@
 				Coolify<span class="text-pink-400 text-xl">v2</span>
 			</p>
 			<h2 class="text-2xl md:text-3xl font-extrabold text-white pt-8">
-				An open-source & self-hostable
+				An open-source & self-hostable 
 				<span class="text-indigo-400">Heroku</span>
 				<span class="text-pink-400 text-2xl">/</span> <span class="text-green-400">Netlify</span> alternative
+			</h2>
+
+			<h2 class="text-base  font-bold text-white pt-8 ">
+				<span class="text-green-400 uppercase">Applications</span>, <span class="text-purple-400 uppercase">databases</span> and <span class="text-pink-400 uppercase">services</span> with a simple click!
+
 			</h2>
 		</div>
 	</div>
 </div>
 
-<div class="text-center pb-10">
+<!-- <div class="text-center pb-10">
 	<p class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl">
 		Built for <span id="typed" class="text-red-400" />
 	</p>
-</div>
+</div> -->
 <div class="text-center pb-10">
 	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
 		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
@@ -42,7 +47,7 @@
 
 	<p class="mt-10 text-xl leading-8 font-extrabold tracking-tight text-white px-10 ">
 		<a href="https://demo.coolify.io" target="_blank">
-			<span class="text-orange-500 text-2xl uppercase hover:underline">Demo instance</span>
+			<span class="text-orange-500 text-2xl uppercase hover:underline">Live demo</span>
 		</a>
 	</p>
 	<span class="tracking-tight text-gray-300 text-xs font-mono">(Please do not overload it 😁)</span>
