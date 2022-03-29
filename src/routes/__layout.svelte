@@ -8,9 +8,9 @@
 
 <SvelteToast {options} />
 <header class="p-4 flex justify-center items-center">
-	<nav class="text-xs md:text-xl flex justify-center space-x-4 font-bold">
+	<nav class="text-xs md:text-xl flex justify-center space-x-2 md:space-x-4 font-bold">
 		<a class="navbar-link" href=".">Home</a>
-		<a class="navbar-link relative" href="https://opencollective.com/coollabsio">Sponsorship <span class="text-[10px] md:text-xs font-bold absolute bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full px-1 md:px-2 rotate-[17deg] ml-0 md:-ml-4 -mt-1">new</span></a>
+		<a class="navbar-link relative" href="https://opencollective.com/coollabsio">Sponsorship <div class="text-[8px] md:text-[10px] md:text-xs font-bold absolute bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full px-1 md:px-2 rotate-[17deg] -mr-3 -mt-1  top-0 right-0">new</div></a>
 		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
 		<a class="navbar-link" href="https://docs.coollabs.io/contact">Contact</a>
 	</nav>
