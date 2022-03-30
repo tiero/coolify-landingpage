@@ -376,7 +376,8 @@
 						<div class="text-lg leading-6 font-extrabold text-white">New architecture</div>
 						<div class="mt-2 text-base text-gray-300">
 							<span class="text-yellow-500 font-bold">v2 is fully rewritten</span> from scratch and eliminated
-							all the restrictions that v1 had!
+							all the restrictions that v1 had!<br> Read the docs <a class="underline text-blue-500 font-bold" href="https://docs.coollabs.io/coolify/about" target="_blank"
+							>here</a>.
 						</div>
 					</div>
 				</div>
