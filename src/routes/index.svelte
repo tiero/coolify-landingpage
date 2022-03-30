@@ -60,6 +60,18 @@
 	</p>
 	<span class="tracking-tight text-gray-300 text-xs font-mono">(Please do not overload it 😁)</span>
 </div>
+
+<div class="flex justify-center pb-10">
+	<iframe
+		width="560"
+		height="315"
+		src="https://www.youtube-nocookie.com/embed/Jg6SWqyvYys"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen
+	/>
+</div>
 <div class="pb-16 md:px-0 px-6">
 	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="mt-10">
@@ -375,9 +387,13 @@
 					<div class="mt-5">
 						<div class="text-lg leading-6 font-extrabold text-white">New architecture</div>
 						<div class="mt-2 text-base text-gray-300">
-							<span class="text-yellow-500 font-bold">v2 is fully rewritten</span> from scratch and eliminated
-							all the restrictions that v1 had!<br> Read the docs <a class="underline text-blue-500 font-bold" href="https://docs.coollabs.io/coolify/about" target="_blank"
-							>here</a>.
+							<span class="text-yellow-500 font-bold">v2 is fully rewritten</span> from scratch and
+							eliminated all the restrictions that v1 had!<br /> Read the docs
+							<a
+								class="underline text-blue-500 font-bold"
+								href="https://docs.coollabs.io/coolify/about"
+								target="_blank">here</a
+							>.
 						</div>
 					</div>
 				</div>
