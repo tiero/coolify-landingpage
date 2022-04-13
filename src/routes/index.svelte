@@ -55,11 +55,11 @@
 </div>
 
 <div class="bg-coolblack ">
-	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
+	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6 lg:pt-8 lg:px-8">
 		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl">
 			Try out now!
 		</div>
-		<div class="text-xs font-bold tracking-tight text-white  pb-8">
+		<div class="text-xs font-bold tracking-tight text-white pb-8">
 			It only takes a minute.
 		</div>
 
