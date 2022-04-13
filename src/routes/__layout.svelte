@@ -8,11 +8,22 @@
 
 <SvelteToast {options} />
 <header class="p-4 flex justify-center items-center">
-	<nav class="text-xs md:text-xl flex justify-center space-x-2 md:space-x-4 font-bold">
-		<a class="navbar-link" href=".">Home</a>
-		<a class="navbar-link relative" href="https://opencollective.com/coollabsio">Sponsorship <div class="text-[8px] md:text-[10px] md:text-xs font-bold absolute bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full px-1 md:px-2 rotate-[17deg] -mr-3 -mt-1  top-0 right-0">new</div></a>
-		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
+	<nav
+		class="text-xl flex flex-col md:flex-row items-center justify-center space-x-0 md:space-y-0 space-y-4 md:space-x-4 font-bold"
+	>
+		<a class="navbar-link" href="https://docs.coollabs.io/coolify/about">Documentation</a>
+		<a class="navbar-link relative" href="https://opencollective.com/coollabsio"
+			>Sponsorship <div
+				class="text-[8px] md:text-[10px] md:text-xs font-bold absolute bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full px-1 md:px-2 rotate-[17deg] -mr-3 -mt-1  top-0 right-0"
+			>
+				new
+			</div></a
+		>
 		<a class="navbar-link" href="https://docs.coollabs.io/contact">Contact</a>
+		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
+		<a class="navbar-link text-orange-500" href="https://demo.coolify.io" target="_blank">
+			Live demo
+		</a>
 	</nav>
 </header>
 <slot />

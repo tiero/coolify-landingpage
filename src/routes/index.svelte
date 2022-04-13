@@ -26,15 +26,20 @@
 			<span class="text-pink-400 text-2xl">/</span> <span class="text-green-400">Netlify</span> alternative
 		</h2>
 
-		<h2 class="text-base  font-bold text-white pt-8 ">
+		<!-- <h2 class="text-base  font-bold text-white pt-8 ">
 			<span class="text-green-400 uppercase">Applications</span>,
 			<span class="text-purple-400 uppercase">databases</span>
 			and <span class="text-pink-400 uppercase">services</span> with a simple click!
-		</h2>
+		</h2> -->
 	</div>
 </div>
 
-<div class="flex justify-center py-8">
+<div class="text-center pb-10">
+	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
+		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
+	</p>
+</div>
+<div class="flex justify-center py-4">
 	<a
 		href="https://www.producthunt.com/posts/coolify?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-coolify"
 		target="_blank"
@@ -48,30 +53,38 @@
 		/></a
 	>
 </div>
-<div class="text-center pb-10">
-	<p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-white px-10 sm:text-2xl">
-		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
-	</p>
 
-	<p class="mt-10 text-xl leading-8 font-extrabold tracking-tight text-white px-10 ">
-		<a href="https://demo.coolify.io" target="_blank">
-			<span class="text-orange-500 text-2xl uppercase hover:underline">Live demo</span>
-		</a>
-	</p>
-	<span class="tracking-tight text-gray-300 text-xs font-mono">(Please do not overload it 😁)</span>
+<div class="bg-coolblack ">
+	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
+		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl">
+			Try out now!
+		</div>
+		<div class="text-xs font-bold tracking-tight text-white  pb-4">
+			It only takes a minute.
+		</div>
+
+		<div class="flex justify-center px-10">
+			<div
+				class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-xs md:text-sm text-left"
+			>
+				wget -q https://get.coollabs.io/coolify/install_next.sh -O install.sh; sudo bash ./install.sh
+			</div>
+		</div>
+		<div class="pb-4">
+			<a
+				href="https://github.com/coollabsio/get.coollabs.io/blob/main/static/coolify/install.sh"
+				target="_blank"
+				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code for the script)</a
+			>
+		</div>
+		<div class="text-base font-extrabold tracking-tight text-white pb-16">You can customize the installation process with options.<br> For more details <a
+			href="https://docs.coollabs.io/coolify/installation"
+			target="_blank"
+			class="underline text-blue-500 font-bold"> click here</a
+		>.</div>
+	</div>
 </div>
 
-<div class="flex justify-center pb-10">
-	<iframe
-		width="560"
-		height="315"
-		src="https://www.youtube-nocookie.com/embed/Jg6SWqyvYys"
-		title="YouTube video player"
-		frameborder="0"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-	/>
-</div>
 <div class="pb-16 md:px-0 px-6">
 	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="mt-10">
@@ -468,26 +481,5 @@
 		>
 	</h2>
 </div>
-<div class="bg-coolblack ">
-	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6  lg:pt-8 lg:px-8">
-		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
-			Try out now! It only takes a minute!
-		</div>
 
-		<div class="flex justify-center px-10">
-			<div
-				class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-xs md:text-sm"
-			>
-				/bin/bash -c "$(curl -fsSL https://get.coollabs.io/coolify/install.sh)"
-			</div>
-		</div>
-		<div class="pb-16">
-			<a
-				href="https://github.com/coollabsio/get.coollabs.io/blob/main/static/coolify/install.sh"
-				target="_blank"
-				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code)</a
-			>
-		</div>
-	</div>
-</div>
 <Subscribe />
