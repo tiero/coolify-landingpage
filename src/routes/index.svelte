@@ -59,7 +59,7 @@
 		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl">
 			Try out now!
 		</div>
-		<div class="text-xs font-bold tracking-tight text-white  pb-4">
+		<div class="text-xs font-bold tracking-tight text-white  pb-8">
 			It only takes a minute.
 		</div>
 
@@ -70,14 +70,14 @@
 				wget -q https://get.coollabs.io/coolify/install_next.sh -O install.sh; sudo bash ./install.sh
 			</div>
 		</div>
-		<div class="pb-4">
+		<div class="pb-12">
 			<a
 				href="https://github.com/coollabsio/get.coollabs.io/blob/main/static/coolify/install.sh"
 				target="_blank"
 				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code for the script)</a
 			>
 		</div>
-		<div class="text-base font-extrabold tracking-tight text-white pb-16">You can customize the installation process with options.<br> For more details <a
+		<div class="text-base font-extrabold tracking-tight text-white pb-8">You can customize the installation process.<br> For more details <a
 			href="https://docs.coollabs.io/coolify/installation"
 			target="_blank"
 			class="underline text-blue-500 font-bold"> click here</a
