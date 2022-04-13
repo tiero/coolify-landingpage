@@ -67,7 +67,7 @@
 			<div
 				class="tracking-tight text-white font-mono bg-black px-4 py-2 rounded text-xs md:text-sm text-left"
 			>
-				wget -q https://get.coollabs.io/coolify/install_next.sh -O install.sh; sudo bash ./install.sh
+				wget -q https://get.coollabs.io/coolify/install.sh -O install.sh; sudo bash ./install.sh
 			</div>
 		</div>
 		<div class="pb-12">
