@@ -7,9 +7,17 @@
 </script>
 
 <SvelteToast {options} />
+<div class="pb-4 md:px-0 px-6 bg-coollabs">
+	<div class="max-w-7xl sm:mx-10  lg:mx-auto px-4 sm:px-6 lg:px-8 text-center">
+	<div class="text-2xl font-bold pt-4">Huge change!</div>
+	<div class="text-md  pb-2">I left my job to focus on Coolify 😱</div>
+	<a class="bg-pink-600 p-2 px-4 hover:bg-pink-500 rounded" href="https://twitter.com/andrasbacsai/status/1542433893273309184" target="_blank">Learn more here</a>
+	</div>
+</div>
 <header class="p-4 flex justify-center items-center">
+
 	<nav
-		class="text-xl flex flex-col md:flex-row items-center justify-center space-x-0 md:space-y-0 space-y-4 md:space-x-4 font-bold"
+		class="text-xl flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-y-0 space-y-4 lg:space-x-4 font-bold"
 	>
 		<a class="navbar-link" href="https://docs.coollabs.io/coolify/about">Documentation</a>
 		<a class="navbar-link relative" href="https://opencollective.com/coollabsio"
@@ -21,9 +29,20 @@
 		>
 		<a class="navbar-link" href="https://docs.coollabs.io/contact">Contact</a>
 		<a class="navbar-link" href="https://coollabs.io">coolLabs</a>
-		<a class="navbar-link text-orange-500" href="https://demo.coolify.io" target="_blank">
-			Live demo
-		</a>
+		<div class="flex justify-center">
+			<a
+				href="https://www.producthunt.com/posts/coolify?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-coolify"
+				target="_blank"
+				><img
+					src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=338273&theme=dark"
+					alt="Coolify - An&#0032;open&#0045;source&#0032;&#0038;&#0032;self&#0045;hostable&#0032;Heroku&#0032;&#0047;&#0032;Netlify&#0032;alternative&#0046; | Product Hunt"
+					style="width: 250px; height: 54px;"
+					loading="lazy"
+					width="250"
+					height="54"
+				/></a
+			>
+		</div>
 	</nav>
 </header>
 <slot />

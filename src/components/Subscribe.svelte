@@ -1,7 +1,7 @@
 <script>
 	import { toast } from '@zerodevx/svelte-toast';
 	import { onMount } from 'svelte';
-	let url = import.meta.env.PROD ? 'https://newsletter.coollabs.io' : 'http://localhost:3000';
+	let url = 'https://newsletter.coollabs.io';
 	let subscribers = 0;
 	onMount(async () => {
 		const subs = await (await fetch(`${url}/subscribers`)).json();

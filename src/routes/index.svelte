@@ -17,20 +17,12 @@
 
 <div class="max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8">
 	<div class="text-center flex flex-col justify-center items-center">
-		<p class="mt-1 font-extrabold text-white text-5xl  lg:text-6xl text-center gradient">
-			Coolify<span class="text-pink-400 text-xl">v2</span>
-		</p>
+		<p class="mt-1 font-extrabold text-white text-5xl  lg:text-6xl text-center gradient">Coolify</p>
 		<h2 class="text-2xl md:text-3xl font-extrabold text-white pt-8">
 			An open-source & self-hostable
 			<span class="text-indigo-400">Heroku</span>
 			<span class="text-pink-400 text-2xl">/</span> <span class="text-green-400">Netlify</span> alternative
 		</h2>
-
-		<!-- <h2 class="text-base  font-bold text-white pt-8 ">
-			<span class="text-green-400 uppercase">Applications</span>,
-			<span class="text-purple-400 uppercase">databases</span>
-			and <span class="text-pink-400 uppercase">services</span> with a simple click!
-		</h2> -->
 	</div>
 </div>
 
@@ -39,28 +31,22 @@
 		<span class="text-sky-500 text-4xl">{instances}</span> instances already installed!
 	</p>
 </div>
-<div class="flex justify-center py-4">
-	<a
-		href="https://www.producthunt.com/posts/coolify?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-coolify"
-		target="_blank"
-		><img
-			src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=338273&theme=dark"
-			alt="Coolify - An&#0032;open&#0045;source&#0032;&#0038;&#0032;self&#0045;hostable&#0032;Heroku&#0032;&#0047;&#0032;Netlify&#0032;alternative&#0046; | Product Hunt"
-			style="width: 250px; height: 54px;"
-			loading="lazy"
-			width="250"
-			height="54"
-		/></a
-	>
-</div>
 
+<div class="flex justify-center ">
+	<iframe
+		width="560"
+		height="315"
+		src="https://www.youtube-nocookie.com/embed/Jg6SWqyvYys"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen
+	/>
+</div>
 <div class="bg-coolblack ">
 	<div class="max-w-7xl mx-auto text-center pt-8 px-4 sm:px-6 lg:pt-8 lg:px-8">
-		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl">
-			Try out now!
-		</div>
-		<div class="text-xs font-bold tracking-tight text-white pb-8">
-			It only takes a minute.
+		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-4">
+			Install on your server in a minute!
 		</div>
 
 		<div class="flex justify-center px-10">
@@ -70,18 +56,18 @@
 				wget -q https://get.coollabs.io/coolify/install.sh -O install.sh; sudo bash ./install.sh
 			</div>
 		</div>
-		<div class="pb-12">
+		<div class="pb-4">
 			<a
-				href="https://github.com/coollabsio/get.coollabs.io/blob/main/static/coolify/install.sh"
+				href="https://docs.coollabs.io/coolify/installation"
 				target="_blank"
-				class="tracking-tight text-gray-300 text-xs font-mono hover:underline">(source code for the script)</a
+				class="tracking-tight text-gray-300 text-xs font-mono hover:underline"
+				>(You can customize the installation process, for more details click here)</a
 			>
 		</div>
-		<div class="text-base font-extrabold tracking-tight text-white pb-8">You can customize the installation process.<br> For more details <a
-			href="https://docs.coollabs.io/coolify/installation"
-			target="_blank"
-			class="underline text-blue-500 font-bold"> click here</a
-		>.</div>
+		<div class="text-base font-extrabold tracking-tight text-white sm:text-2xl pb-12">
+			Or try out a <a class="text-orange-500 hover:underline" href="https://demo.coolify.io" target="_blank"
+				>live demo</a>!
+		</div>
 	</div>
 </div>
 
@@ -202,7 +188,12 @@
 								><span class="font-bold text-pink-500 underline hover:text-white"
 									>VSCode Server</span
 								></a
-							>, <span class="font-bold text-pink-500">and more...</span>? No problem! Just a click!
+							>, and	
+							<a href="https://docs.coollabs.io/coolify/services/r" target="_blank"
+							><span class="font-bold text-pink-500 underline hover:text-white"
+								> more...</span
+							></a
+						>?
 						</div>
 					</div>
 				</div>
@@ -376,7 +367,7 @@
 					</div>
 				</div>
 
-				<div>
+				<!-- <div>
 					<div
 						class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white"
 					>
@@ -409,7 +400,7 @@
 							>.
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

@@ -2,7 +2,6 @@ import preprocess from 'svelte-preprocess'
 import path from 'path'
 import adapter from '@sveltejs/adapter-static'
 
-console.log(process.env.NODE_ENV)
 /** @type {import('@sveltejs/kit').Config} */
 export default {
   preprocess: [
@@ -11,20 +10,14 @@ export default {
     })
   ],
   kit: {
-    adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: null
-    }),
-    target: '#svelte',
+    adapter: adapter(),
     prerender: {
-      crawl: true,
-      enabled: true,
-      force: true,
-      pages: ['*']
+      default: true,
     },
-    router: process.env.NODE_ENV === 'development',
-    hydrate: process.env.NODE_ENV === 'development',
+    // browser:{
+    //   hydrate: process.env.NODE_ENV === 'development',
+    //   router: process.env.NODE_ENV === 'development',
+    // },
     vite: {
       server: {
         hmr: {
