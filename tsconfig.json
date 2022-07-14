@@ -26,9 +26,8 @@
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
-			"$lib/*": [
-				"src/lib/*"
-			],
+			"$lib":["src/lib"],
+			"$lib/*":["src/lib/*"],
 			"$store": [
 				"src/store/index.ts"
 			],

@@ -39,7 +39,7 @@
 	}
 </script>
 
-<div class="bg-warmGray-900 text-white">
+<div class="bg-coolgray-100 text-white">
 	<div class="max-w-3xl text-center pb-10 py-5 my-5 mx-auto px-4">
 		<p class="font-bold text-xl">
 			Interested about Coolify or <a
