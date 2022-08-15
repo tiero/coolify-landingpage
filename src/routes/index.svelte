@@ -58,7 +58,7 @@
 		</div>
 		<div class="pb-4">
 			<a
-				href="https://docs.coollabs.io/coolify/installation"
+				href="https://docs.coollabs.io/coolify/installation.html"
 				target="_blank"
 				class="tracking-tight text-gray-300 text-xs font-mono hover:underline"
 				>(You can customize the installation process, for more details click here)</a
