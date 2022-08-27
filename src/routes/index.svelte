@@ -268,8 +268,7 @@
 						<div class="text-lg leading-6 font-extrabold text-white">Destinations</div>
 						<div class="mt-2 text-base text-gray-300">
 							No matter what you host, you can deploy it anywhere, <span
-								class="text-sky-500 font-bold">Local Docker Engine, Remote Docker Engine</span
-							> <span class="text-xs text-red-500 font-mono">(WIP)</span>, or
+								class="text-sky-500 font-bold">Local Docker Engine, Remote Docker Engine, or
 							<span class="text-sky-500 font-bold">Kubernetes</span>
 							<span class="text-xs text-red-500 font-mono">(WIP)</span>.
 						</div>
